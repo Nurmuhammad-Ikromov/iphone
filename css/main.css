@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+}
+img{
+    vertical-align: middle;
+    object-fit: cover;
+
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.screen {
+    width: 360px;
+    height: 665px;
+    margin: 20px auto;
+    padding: 10px;
+    padding-top: 60px;
+    background-image: url("../images/iphone_img.webp");
+    background-size: 560px 770px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.screen__title {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+}
+.screen__card {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.screen__form {
+    width: 310px;
+    margin: 0 auto;
+}
+
+.screen__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.screen__item{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.screen__icon {
+    width: 30px;
+    height: 25px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.screen__item-info {
+    margin-right: auto;
+}
+
+.info__title {
+    margin: 0;
+}
+.info__text {
+    margin: 0;
+    color: #A5A8A7;
+}
+.screen__input:checked ~ .screen__label{
+    background-color: #5288F4;
+}
+
+.screen__input:checked ~ .screen__label > .screen__span{
+    transform: translateX(25px);
+}
+
+.screen__label {
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 1px;
+    transition: all 0.3s ease;
+}
+.screen__span {
+    display: inline-block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease;
+
+}
